@@ -17,6 +17,9 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.1.17
         version: 4.1.17(vite@7.2.4(@types/node@24.10.1)(jiti@2.6.1)(lightningcss@1.30.2))
+      immer:
+        specifier: ^11.0.0
+        version: 11.0.0
       lucide-react:
         specifier: ^0.555.0
         version: 0.555.0(react@19.2.0)
@@ -42,8 +45,8 @@ importers:
         specifier: ^4.1.17
         version: 4.1.17
       zustand:
-        specifier: ^5.0.8
-        version: 5.0.8(@types/react@19.2.7)(react@19.2.0)
+        specifier: ^5.0.1
+        version: 5.0.8(@types/react@19.2.7)(immer@11.0.0)(react@19.2.0)
     devDependencies:
       '@eslint/js':
         specifier: ^9.39.1
@@ -1096,6 +1099,9 @@ packages:
   ignore@7.0.5:
     resolution: {integrity: sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg==}
     engines: {node: '>= 4'}
+
+  immer@11.0.0:
+    resolution: {integrity: sha512-XtRG4SINt4dpqlnJvs70O2j6hH7H0X8fUzFsjMn1rwnETaxwp83HLNimXBjZ78MrKl3/d3/pkzDH0o0Lkxm37Q==}
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -2472,6 +2478,8 @@ snapshots:
 
   ignore@7.0.5: {}
 
+  immer@11.0.0: {}
+
   import-fresh@3.3.1:
     dependencies:
       parent-module: 1.0.1
@@ -2812,7 +2820,8 @@ snapshots:
 
   zod@4.1.13: {}
 
-  zustand@5.0.8(@types/react@19.2.7)(react@19.2.0):
+  zustand@5.0.8(@types/react@19.2.7)(immer@11.0.0)(react@19.2.0):
     optionalDependencies:
       '@types/react': 19.2.7
+      immer: 11.0.0
       react: 19.2.0
